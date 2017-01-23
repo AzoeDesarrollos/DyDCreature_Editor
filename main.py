@@ -1,9 +1,9 @@
-from pygame import init as py_init, quit as py_quit
+from sys import exit
 from pygame import display as pantalla, event
+from pygame import init as py_init, quit as py_quit
 from azoe.engine import EventHandler
 from azoe.widgets import NamedValue
-from entidad import Entidad
-from sys import exit
+from backend.entidad import Entidad
 
 py_init()
 fondo = pantalla.set_mode((400, 400))

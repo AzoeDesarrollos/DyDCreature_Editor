@@ -1,6 +1,6 @@
-from data import *
-from caracteristica import Caracteristica as Caract
-from linkedvalue import LinkedValue
+from backend.data import *
+from backend.linkedvalue import LinkedValue
+from backend.caracteristica import Caracteristica as Caract
 
 
 class Entidad:
