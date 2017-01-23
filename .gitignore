@@ -1,3 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
 
+__pycache__/
+azoe/engine/__pycache__/
+azoe/widgets/__pycache__/
+lib/__pycache__/
