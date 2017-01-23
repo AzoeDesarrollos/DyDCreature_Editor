@@ -7,14 +7,23 @@ class Value (BaseWidget):
     img_uns = None
     img_sel = None
     img_dis = None
+    show_sign = False
 
-    def __init__(self, value, center):
+    def __init__(self, parent, value, show_sign=False):
         super().__init__()
+        self.parent = parent
         self.value = value
+        self.show_sign = show_sign
         self.render()
 
         self.image = self.img_uns
-        self.rect = self.image.get_rect(center=center)
+        self.rect = self.image.get_rect()
+
+    def set_value(self, n):
+        self.value = n
+
+    def get_value(self):
+        return self.value
 
     def __repr__(self):
         return str(self.value)
@@ -30,7 +39,6 @@ class Value (BaseWidget):
             self.value += 1
         elif button == 5:
             self.value -= 1
-        self.render()
 
     def render(self):
         fuente_n = font.SysFont('Verdana', 16)
@@ -40,11 +48,18 @@ class Value (BaseWidget):
         negro = 0, 0, 0
 
         value = self.value
-        self.img_uns = fuente_n.render(str(value), 1, negro, blanco)
-        self.img_sel = fuente_b.render(str(value), 1, negro, blanco)
-        self.img_dis = fuente_n.render(str(value), 1, gris, blanco)
+        if value >= 0 and self.show_sign:
+            s = '+'
+        else:
+            s = ''
+
+        self.img_uns = fuente_n.render(s+str(value), 1, negro, blanco)
+        self.img_sel = fuente_b.render(s+str(value), 1, negro, blanco)
+        self.img_dis = fuente_n.render(s+str(value), 1, gris, blanco)
+        self.dirty = 1
 
     def update(self):
+        self.render()
         if self.hasMouseOver:
             self.image = self.img_sel
         else:

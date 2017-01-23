@@ -1,0 +1,79 @@
+{
+  "caracteristicas":{
+    "0":{
+      "nombre":"Strength",
+      "abr":"Str"
+    },
+    "2":{
+      "nombre":"Dexterity",
+      "abr":"Dex"
+    },
+    "3":{
+      "nombre":"Constitution",
+      "abr":"Con"
+    },
+    "4":{
+      "nombre":"Intelligence",
+      "abr":"Int"
+    },
+    "5":{
+      "nombre":"Wisdom",
+      "abr":"Wis"
+    },
+    "6":{
+      "nombre":"Charisma",
+      "abr":"Cha"
+    }
+},
+
+  "alineamientos":{
+    "0":{
+      "nombre":"Lawful Good",
+      "abr":"LG"
+    },
+    "1":{
+      "nombre":"Chaotic Good",
+      "abr":"CG"
+    },
+    "2":{
+      "nombre":"Neutral Good",
+      "abr":"NG"
+    },
+    "3":{
+      "nombre":"Lawful Neutral",
+      "abr":"LN"
+    },
+    "4":{
+      "nombre":"Chaotic Neutral",
+      "abr":"CN"
+    },
+    "5":{
+      "nombre":"Neutral",
+      "abr":"N"
+    },
+    "6":{
+      "nombre":"Lawful Evil",
+      "abr":"LE"
+    },
+    "7":{
+      "nombre":"Chaotic Evil",
+      "abr":"CE"
+    },
+    "8":{
+      "nombre":"Neutral Evil",
+      "abr":"NE"
+    }
+  },
+
+  "tamanios":{
+    "0":{"nombre":"Tiny",   "modificador":8,"presa":-16,"esconderse":16},
+    "1":{"nombre":"Diminutive",    "modificador":4,"presa":-12,"esconderse":12},
+    "2":{"nombre":"Fine",      "modificador":2,"presa":-8, "esconderse":8},
+    "3":{"nombre":"Pequeño",     "modificador":1,"presa":-4, "esconderse":4},
+    "4":{"nombre":"Medium",     "modificador":0,"presa":0, "esconderse":0},
+    "5":{"nombre":"Large",      "modificador":-1,"presa":4, "esconderse":-4},
+    "6":{"nombre":"Huge",      "modificador":-2,"presa":8, "esconderse":-8},
+    "7":{"nombre":"Gargantuan","modificador":-4,"presa":12,"esconderse":-12},
+    "8":{"nombre":"Colossal",     "modificador":-8,"presa":16,"esconderse":-16}
+  }
+}

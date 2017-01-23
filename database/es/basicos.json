@@ -1,0 +1,79 @@
+{
+  "caracteristicas":{
+    "0":{
+      "nombre":"Fuerza",
+      "abr":"Fue"
+    },
+    "1":{
+      "nombre":"Destreza",
+      "abr":"Des"
+    },
+    "2":{
+      "nombre":"Constitución",
+      "abr":"Con"
+    },
+    "3":{
+      "nombre":"Inteligencia",
+      "abr":"Int"
+    },
+    "4":{
+      "nombre":"Sabiduría",
+      "abr":"Sab"
+    },
+    "5":{
+      "nombre":"Carisma",
+      "abr":"Car"
+    }
+  },
+
+  "alineamientos":{
+    "0":{
+      "nombre":"Legal Bueno",
+      "abr":"LB"
+    },
+    "1":{
+      "nombre":"Caótico Bueno",
+      "abr":"CB"
+    },
+    "2":{
+      "nombre":"Neutral Bueno",
+      "abr":"NB"
+    },
+    "3":{
+      "nombre":"Legal Neutral",
+      "abr":"LN"
+    },
+    "4":{
+      "nombre":"Caótico Neutral",
+      "abr":"CN"
+    },
+    "5":{
+      "nombre":"Neutral",
+      "abr":"N"
+    },
+    "6":{
+      "nombre":"Legal Maligno",
+      "abr":"LM"
+    },
+    "7":{
+      "nombre":"Caótico Maligno",
+      "abr":"CM"
+    },
+    "8":{
+      "nombre":"Neutral Maligno",
+      "abr":"NM"
+    }
+  },
+
+  "tamanios":{
+    "0":{"nombre":"Minúsculo",   "modificador":8,"presa":-16,"esconderse":16},
+    "1":{"nombre":"Diminuto",    "modificador":4,"presa":-12,"esconderse":12},
+    "2":{"nombre":"Menudo",      "modificador":2,"presa":-8, "esconderse":8},
+    "3":{"nombre":"Pequeño",     "modificador":1,"presa":-4, "esconderse":4},
+    "4":{"nombre":"Mediano",     "modificador":0,"presa":0, "esconderse":0},
+    "5":{"nombre":"Grande",      "modificador":-1,"presa":4, "esconderse":-4},
+    "6":{"nombre":"Enorme",      "modificador":-2,"presa":8, "esconderse":-8},
+    "7":{"nombre":"Gargantuesco","modificador":-4,"presa":12,"esconderse":-12},
+    "8":{"nombre":"Colosal",     "modificador":-8,"presa":16,"esconderse":-16}
+  }
+}
