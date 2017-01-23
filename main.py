@@ -19,7 +19,7 @@ def salir():
 
 # valor = Value(12, (200, 200))
 
-plantilla = Resources.abrir_json('plantilla.json').replace('; ', ';\n')
+plantilla = Resources.abrir_json('plantilla.json')['es'].replace('; ', '\n')
 
 tags = load_tagarrayfile('lib/tagarray.json')
 render = render_tagged_text(plantilla, tags, 390)
