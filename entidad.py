@@ -1,5 +1,7 @@
 from data import *
 from caracteristica import Caracteristica as Caract
+from linkedvalue import LinkedValue
+
 
 class Entidad:
     nombre = ''
@@ -34,6 +36,9 @@ class Entidad:
         for h in range(len(HABS)):
             self.habilidades[str(h)] = {'rng': 0, 'dts': 0, 'rcl': 0, 'sng': 0, 'obj': 0}
 
+        self.iniciativa = LinkedValue(self.caracteristicas['DES'].mod, 'iniciativa')
+
     def update(self):
         for caract in self.caracteristicas:
             self.caracteristicas[caract].update()
+        self.iniciativa.update()

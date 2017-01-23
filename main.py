@@ -1,6 +1,7 @@
 from pygame import init as py_init, quit as py_quit
 from pygame import display as pantalla, event
 from azoe.engine import EventHandler
+from azoe.widgets import NamedValue
 from entidad import Entidad
 from sys import exit
 
@@ -9,11 +10,18 @@ fondo = pantalla.set_mode((400, 400))
 event.set_blocked([12, 13])
 entity = Entidad()
 
-EventHandler.add_widget(entity.caracteristicas['FUE'].name)
-EventHandler.add_widget(entity.caracteristicas['FUE'].punt)
-EventHandler.add_widget(entity.caracteristicas['FUE'].mod)
+initiative = NamedValue('Iniciativa')
+initiative.rect.top = entity.caracteristicas['DES'].name.rect.bottom + 2
+entity.iniciativa.valor.rect.topleft = initiative.rect.right + 2, initiative.rect.top
 
-EventHandler.currentFocus = entity.caracteristicas['FUE'].punt
+EventHandler.add_widget(initiative)
+EventHandler.add_widget(entity.iniciativa.valor)
+EventHandler.add_widget(entity.caracteristicas['DES'].name)
+EventHandler.add_widget(entity.caracteristicas['DES'].punt)
+EventHandler.add_widget(entity.caracteristicas['DES'].mod)
+
+EventHandler.currentFocus = entity.caracteristicas['DES'].punt
+
 
 hayCambios = True
 while hayCambios:
